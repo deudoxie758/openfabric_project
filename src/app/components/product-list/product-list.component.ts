@@ -11,7 +11,7 @@ export class ProductListComponent {
 
   constructor(private productService: ProductService) {}
 
-  ngOnit(): void {
+  ngOnInit(): void {
     this.getProducts();
   }
 

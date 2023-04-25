@@ -1,7 +1,8 @@
-<div *ngIf="product">
+<div *ngIf="product" class="product-details">
     <h2>{{ product.name }}</h2>
     <p>{{ product.description }}</p>
-    <p>Price: {{ product.price }}</p>
-    <img [src]="product.imageUrl" alt="{{ product.name }}" />
+    <p>{{ product.price }}</p>
+    <img [src]="product.imageUrl" alt="{{ product.name }}">
+    <button [routerLink]="['/edit-product', product.id]">Edit Product</button>
     <button routerLink="/products">Back to Products</button>
 </div>

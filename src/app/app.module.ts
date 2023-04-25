@@ -9,6 +9,8 @@ import { ProductListComponent } from '../app/components/product-list/product-lis
 import { ProductDetailComponent } from '../app/components/product-details/product-details.component';
 import { ProductAddEditComponent } from '../app/components/product-add-edit/product-add-edit.component';
 import { ProductService } from 'src/app/services/product.service';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { ProductService } from 'src/app/services/product.service';
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
+    CommonModule,
+    RouterModule,
   ],
   providers: [ProductService],
   bootstrap: [AppComponent],

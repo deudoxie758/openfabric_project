@@ -10,10 +10,10 @@ app.use(bodyParser.json());
 
 // Database connection
 const connection = mysql.createConnection({
-  host: "your_database_host",
-  user: "your_username",
-  password: "your_password",
-  database: "your_database_name",
+  host: "localhost",
+  user: "root",
+  password: "rootroot",
+  database: "open_inventory",
 });
 
 connection.connect((err) => {
